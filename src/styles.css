@@ -85,25 +85,35 @@
 .card {
   border-style: solid;
   width: fit-content;
-  text-align: center;
   padding: 2rem;
-  margin: 1rem 1rem;
+  margin: 2rem 2rem 0 0 ;
   border-radius: 10px;
-  
+  border-color: lightgray;
+}
+
+.cardname {
+  text-align: center;
 }
 
 .delete {
   background-color: red;
   justify-content: flex-end;
-  margin-left: 9rem;
+  margin-left: 11rem;
   border-radius: 5px;
   padding: 5px;
+  color: white;
+  border-color: red;
+  cursor: pointer;
 }
 
 .edit {
-  background-color: orange;
+  background-color: lightgray;
   border-radius: 5px;
   padding: 5px;
+  color: gray;
+  border-color: gray;
+  cursor: pointer;
+  margin-left: 5px
 }
 
 .li {
@@ -112,18 +122,21 @@
 }
 
 .add {
-  background-color: blue;
+  background-color: rgb(56, 77, 113);
   color: white;
-  border-color: blue;
+  border-color: rgb(56, 77, 113);
   border-radius: 10px;
   padding: 10px;
+  cursor: pointer;
+  width: 10rem;
 }
 
 .cancel {
-  background-color: rgb(255, 17, 0);
+  background-color: rgb(215, 36, 23);
   color: white;
-  border-color: rgb(255, 0, 0);
+  border-color: rgb(215, 36, 23);
   border-radius: 10px;
   padding: 10px;
-  margin-left: 9rem;
+  margin-left: 4rem;
 }
+

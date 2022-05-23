@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTrash } from 'react-icons/fa'; 
+import { FaRegTrashAlt } from 'react-icons/fa'; 
 import { BsPencilFill } from 'react-icons/bs'; 
 
 const UsersList = ({ user, removeUser, selectUser }) => {
@@ -10,7 +10,7 @@ const UsersList = ({ user, removeUser, selectUser }) => {
           
           <div className="card">
 
-          <h2>
+          <h2 className="cardname">
             <b> </b> {user.first_name}
            
             <hr />
@@ -29,7 +29,7 @@ const UsersList = ({ user, removeUser, selectUser }) => {
             <b>Password: </b> {user.password}
           </p>
           <br />
-          <button onClick={() => removeUser(user.id)} className="delete"> < FaTrash /></button>
+          <button onClick={() => removeUser(user.id)} className="delete"> < FaRegTrashAlt /></button>
           <button onClick={() => selectUser(user)} className="edit"><BsPencilFill /></button>
           </div>
         </li>
